@@ -183,6 +183,7 @@ if choice1 == "Login":
                 st.dataframe(clean_db)
             else:
                 result = login_user(Email, password)
+                st.markdown("<p style='color:black;'> Model Accuracy : 91 % </p>", unsafe_allow_html=True)
                 if result:
                     imgur = st.file_uploader("Browse Sugarcane Leaf Image")
                     if imgur:
